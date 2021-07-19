@@ -1,5 +1,5 @@
 /* Using CSS to style HTML elements,
-Way to select element to style in CSS are ID selector, Class selector, and suedo class selector */
+Way to select element to style in CSS are ID selector, Class selector, and pseudo class selector */
 
 /* List of element selector */
 h1,
@@ -82,7 +82,7 @@ aside {
   border-bottom: 5px solid #1098ad;
 }
 
-/* Using seudo class in CSS */
+/* Using pseudo class in CSS */
 li:last-child {
   font-weight: bold;
 }
@@ -95,19 +95,27 @@ li:nth-child(even) {
   color: royalblue;
 }
 
-/* Using seudo class for bload of text inside artical container */
+/* Using pseudo class for bload of text inside artical container */
 article p:nth-child(even) {
   color: #d81b1b;
 }
 
 /* Styling links */
 
-a:link,
-a:visited {
+a:link {
   color: #1098ad;
   text-decoration: none;
 }
+a:visited {
+  color: #1098ad;
+}
 
 a:hover {
-  color: #b6b6b6;
+  color: #1f9fe9;
+  text-decoration: underline #1098ad;
+}
+
+a:active {
+  background-color: #b6b6b6;
+  font-style: italic;
 }
