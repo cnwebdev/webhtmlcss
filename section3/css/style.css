@@ -1,3 +1,7 @@
+/* Using CSS to style HTML elements,
+Way to select element to style in CSS are ID selector, Class selector, and suedo class selector */
+
+/* List of element selector */
 h1,
 h2,
 h3,
@@ -5,12 +9,19 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444444;
 }
 
 h1 {
   text-transform: uppercase;
   font-style: italic;
   font-size: 26px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h2 {
@@ -45,6 +56,7 @@ li {
   font-size: 18px;
 }
 
+/* ID selector */
 #copyright {
   font-size: 16px;
 }
@@ -54,6 +66,48 @@ li {
   font-weight: bold;
 }
 
+/* class selector */
 .related-li {
   list-style: none;
+}
+
+/* element selector */
+header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/* Using seudo class in CSS */
+li:last-child {
+  font-weight: bold;
+}
+
+li:first-child {
+  font-style: italic;
+}
+
+li:nth-child(even) {
+  color: royalblue;
+}
+
+/* Using seudo class for bload of text inside artical container */
+article p:nth-child(even) {
+  color: #d81b1b;
+}
+
+/* Styling links */
+
+a:link,
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b6b6b6;
 }
